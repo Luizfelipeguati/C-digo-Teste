@@ -8,6 +8,7 @@ frete1 = 30.00
 frete2 = 60.00
 frete3 = 120.00
 frete4 = 240.00
+frete5 = 360.00
 
 print('O Valor sem frete foi: R${:.2f}'.format(valorfinal))
 
@@ -20,6 +21,9 @@ elif qtdproduto >=11 and qtdproduto <101:
 elif qtdproduto >=101 and qtdproduto <1001:
     valorfinalcfrete3 = valorfinal + frete3
     print('O Valor com frete foi: R${:.2f}                 (frete de: R${:.2f})'.format(valorfinalcfrete3,frete3))
-else:
+elif qtdproduto >=101 and qtdproduto <1001:
     valorfinalcfrete4 = valorfinal + frete4
     print('O Valor com frete foi: R${:.2f}                 (frete de: R${:.2f})'.format(valorfinalcfrete4,frete4))
+else:
+    valorfinalcfrete5 = valorfinal + frete5
+    print('O Valor com frete foi: R${:.2f}                 (frete de: R${:.2f})'.format(valorfinalcfrete5,frete5))
